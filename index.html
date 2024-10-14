@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -76,23 +78,25 @@
             <defs/>
             <path d="M0.5 0.5L34.5 124.5" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
         </svg>
-        <img class="header__line" src="images/line.png" alt="line">
-    
+        <div class="center">
         <h1 class="header__heading">Добро пожаловать на мой сайт мини-игр</h1>
     
         <p class="header__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
     
         <button class="header__button">Поехали!</button>
+    </div>
 </header>
+
+<img class="header__line" src="images/line.png" alt="line">
 
     <main class="main">
 
-        <h2 class="main__heading">Об играх</h2>
+        <h2 class="main__heading center">Об играх</h2>
 
-        <p class="main__description">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.
-            Все игры доступны для пользования.</p>
+        <p class="main__description center">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.
+            <br>Все игры доступны для пользования.</p>
 
-        <div class="games">
+        <div class="games center">
 
             <section class="games__blocks">
                 <img class="games__images" src="images/game-one.jpeg" alt="game-one">
