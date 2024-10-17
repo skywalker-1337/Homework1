@@ -123,10 +123,16 @@ body {
   z-index: 1;
   display: block;
 }
+.header__mobile-star-one {
+  display: none;
+}
 
 .main {
   padding-top: 94px;
   padding-bottom: 50px;
+}
+.main__heading-mobile {
+  display: none;
 }
 .main__heading {
   color: rgb(255, 255, 255);
@@ -168,6 +174,12 @@ body {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+}
+.games__description_mobile {
+  display: none;
+}
+.games__button-mobile {
+  display: none;
 }
 .games__blocks {
   background-color: white;
@@ -217,4 +229,191 @@ body {
 .center {
   padding-left: calc(50% - 620px);
   padding-right: calc(50% - 620px);
+}
+
+.quiz-mobile-heading {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: auto;
+    padding-left: 57px;
+    padding-right: 56px;
+    padding-top: 147px;
+    padding-bottom: 182px;
+    text-align: center;
+  }
+  .header__description {
+    width: 296px;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
+  .header__heading {
+    width: 262px;
+    font-size: 40px;
+  }
+  .header__star-one {
+    width: 35px;
+    height: 35px;
+    left: 37px;
+    top: 97px;
+  }
+  .header__star-two {
+    width: 21px;
+    height: 21px;
+    left: 91px;
+    top: 64px;
+  }
+  .header__star-three {
+    display: none;
+  }
+  .header__star-four {
+    display: none;
+  }
+  .header__vector-one {
+    width: 223px;
+    height: 238px;
+    left: 240px;
+    top: -100px;
+  }
+  .header__vector-two {
+    display: none;
+  }
+  .header__vector-three {
+    display: none;
+  }
+  .header__vector-four {
+    display: none;
+  }
+  .header__vector-five {
+    display: none;
+  }
+  .header__vector-six {
+    display: none;
+  }
+  .header__line {
+    overflow-x: hidden;
+    width: auto;
+    height: 51px;
+  }
+  .main {
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+    padding-top: 48px;
+  }
+  .main__heading-mobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 48px;
+  }
+  .main__heading {
+    display: none;
+  }
+  .main__description {
+    display: none;
+  }
+  .main__star {
+    display: none;
+  }
+  .main__star-two {
+    display: none;
+  }
+  .main__star-three {
+    display: none;
+  }
+  .games__blocks {
+    width: 343px;
+  }
+  .games__images {
+    width: 343px;
+  }
+  .games__numbers {
+    display: none;
+  }
+  .games__heading {
+    padding-top: 29px;
+    padding-left: 29px;
+  }
+  .games__description_mobile {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 29px;
+    padding-bottom: 32px;
+    width: 249px;
+  }
+  .games__button-mobile {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 282px;
+    height: 55px;
+    z-index: 2;
+    margin-left: 29px;
+    margin-bottom: 32px;
+  }
+  .game-three {
+    width: 200px;
+  }
+  .guess-the-number {
+    order: 1;
+  }
+  .simple-arithmetic {
+    order: 2;
+  }
+  .reverse-the-text {
+    order: 3;
+  }
+  .quiz {
+    order: 4;
+  }
+  .rock-paper-scissors {
+    order: 5;
+  }
+  .random-color-generator {
+    order: 6;
+  }
+  .quiz-mobile-heading {
+    display: block;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 29px;
+    padding-top: 29px;
+    padding-bottom: 16px;
+  }
+  .quiz-mobile {
+    display: none;
+  }
+  .games__blocks:hover {
+    transform: scale(1.03);
+  }
 }/*# sourceMappingURL=style.css.map */
