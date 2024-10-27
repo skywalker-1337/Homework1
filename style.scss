@@ -264,6 +264,139 @@ body {
     display: none;
 }
 
+.miniGames {
+    padding-top: 50px;
+    padding-bottom: 144px;
+
+    &__sections {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 152px;
+    }
+
+    &__heading {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+
+    &__list {
+        background-color: white;
+        border-radius: 30px;
+        width: 1200px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        padding-top: 48px;
+        padding-bottom: 24px;
+        padding-left: 48px;
+        width: 400px;
+    }
+
+    &__description {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 36px;
+        padding-left: 48px;
+        width: 400px;
+    }
+
+    &__button {
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 247px;
+        height: 66px;
+        margin-left: 48px;
+    }
+
+    &__name-one {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        padding-top: 48px;
+        padding-bottom: 24px;
+        margin-left: -48px;
+        width: 400px;
+    }
+
+    &__description-one {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 36px;
+        margin-left: -48px;
+        width: 400px; 
+    }
+
+    &__button-one {
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 247px;
+        height: 66px;
+        margin-left: -48px;
+    }
+
+}
+
+.imageOne {
+    order: 1;
+}
+
+.textOne {
+    order: 2;
+}
+
+.footer {
+    background-color: rgb(189, 237, 53);
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 61px;
+        padding-bottom: 60px;
+    }
+}
+
 @media (max-width: 767px) {
 
     .header {
