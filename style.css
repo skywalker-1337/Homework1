@@ -537,4 +537,12 @@ body {
   .games__blocks:hover {
     transform: scale(1.03);
   }
+  .miniGames {
+    display: none;
+  }
+  .footer__text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
