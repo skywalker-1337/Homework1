@@ -22,6 +22,7 @@ body {
     url(images/Vector_one.svg) no-repeat right 113px bottom 206px;
     background-color: rgb(225, 255, 143);
     padding-top: 196px;
+    overflow-x: hidden;
 
     &__heading {
         color: rgb(32, 32, 39);
@@ -378,7 +379,6 @@ body {
             padding-right: 24px;
             padding-top: 16px;
             padding-bottom: 16px;
-            width: 3220px;
             margin-left: -57px;
             margin-bottom: -185px;
         }

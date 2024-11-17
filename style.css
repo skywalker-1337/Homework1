@@ -13,6 +13,7 @@ body {
   background: url(images/Big_star.svg) no-repeat right -390px top -270px, url(images/Mini_star-one.svg) no-repeat left 63px top 94px, url(images/Mini_star-two.svg) no-repeat left 156px top 69px, url(images/Mini_star-three.svg) no-repeat right 455px bottom 225px, url(images/Mini_star-four.svg) no-repeat right 344px bottom 149px, url(images/Line_one.svg) no-repeat right 269px top -20px, url(images/Line_two.svg) no-repeat right 231px top 254px, url(images/Line_three.svg) no-repeat right 10px bottom 3px, url(images/Line_four.svg) no-repeat right 61px bottom 20px, url(images/Vector_one.svg) no-repeat right 113px bottom 206px;
   background-color: rgb(225, 255, 143);
   padding-top: 196px;
+  overflow-x: hidden;
 }
 .header__heading {
   color: rgb(32, 32, 39);
@@ -333,7 +334,6 @@ body {
     padding-right: 24px;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 3220px;
     margin-left: -57px;
     margin-bottom: -185px;
   }
