@@ -34,7 +34,7 @@
 
         <div class="games center">
 
-            <section class="games__blocks guess-the-number">
+            <section class="games__blocks guess-the-number" onclick="guessTheNumber()">
                 <img class="games__images" src="images/game-one.jpeg" alt="game-one">
                 <p class="games__numbers">Игра № 1</p>
                 <h3 class="games__heading">Угадай число</h3>
@@ -92,7 +92,7 @@
                     <div class="miniGames__text">
                     <h4 class="miniGames__name">Угадай число</h4>
                     <p class="miniGames__description">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="miniGames__button">Играть!</button>
+                    <button class="miniGames__button" onclick="guessTheNumber()">Играть!</button>
                 </div>
                     <img class="miniGames__image" src="images/Minigame1.png" alt="miniGame1">
                 </section>
@@ -149,5 +149,7 @@
     <footer class="footer">
         <p class="footer__text">Все права защищены.</p>
     </footer>
+
+    <script src="scriptGuessNumber.js"></script>
 </body>
 </html>
