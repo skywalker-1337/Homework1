@@ -9,6 +9,14 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.mobile {
+  display: none;
+}
+
 .header {
   background: url(images/Big_star.svg) no-repeat right -390px top -270px, url(images/Mini_star-one.svg) no-repeat left 63px top 94px, url(images/Mini_star-two.svg) no-repeat left 156px top 69px, url(images/Mini_star-three.svg) no-repeat right 455px bottom 225px, url(images/Mini_star-four.svg) no-repeat right 344px bottom 149px, url(images/Line_one.svg) no-repeat right 269px top -20px, url(images/Line_two.svg) no-repeat right 231px top 254px, url(images/Line_three.svg) no-repeat right 10px bottom 3px, url(images/Line_four.svg) no-repeat right 61px bottom 20px, url(images/Vector_one.svg) no-repeat right 113px bottom 206px;
   background-color: rgb(225, 255, 143);
@@ -20,7 +28,7 @@ body {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  width: 690px;
+  width: 800px;
   z-index: 2;
 }
 .header__description {
@@ -38,12 +46,6 @@ body {
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
-  color: rgb(255, 255, 255);
-  font-family: inherit;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 141.69%;
-  letter-spacing: 0%;
   text-align: center;
   width: 247px;
   height: 66px;
@@ -73,6 +75,15 @@ body {
 }
 .header__mobile-star-one {
   display: none;
+}
+.header__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
 }
 
 .main {
@@ -154,6 +165,9 @@ body {
   width: 300px;
   padding-bottom: 32px;
 }
+.games__links {
+  text-decoration: none;
+}
 
 .games__blocks:hover {
   transform: scale(1.1);
@@ -229,6 +243,11 @@ body {
   width: 247px;
   height: 66px;
   margin-left: 48px;
+  transition: all 0.3s ease;
+}
+.miniGames__button:hover {
+  background-color: white;
+  color: black;
 }
 .miniGames__name-one {
   color: rgb(32, 32, 39);
@@ -264,6 +283,11 @@ body {
   width: 247px;
   height: 66px;
   margin-left: -48px;
+  transition: all 0.3s ease;
+}
+.miniGames__button-one:hover {
+  background-color: white;
+  color: black;
 }
 
 .imageOne {
@@ -464,5 +488,8 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 16px;
+  }
+  .mobile {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

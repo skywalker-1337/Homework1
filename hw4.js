@@ -24,9 +24,8 @@ const squareOfNumberOne = (a) => {
     console.log(a * a);
 }
 // Вторая функция
-let c;
 const squareOfNumberTwo = (b) => {
-    return c = b * b;
+    return b * b;
 }
 
 // Задание 4
@@ -56,7 +55,7 @@ const squareNumbers = (a) => {
     if (isNaN(a)) {
         return 'Переданный параметр не является числом';
     } else {
-        return `${a} в кубе равняется ${a * a}`;
+        return `${a} в кубе равняется ${a * a * a}`;
     }
 }
 
