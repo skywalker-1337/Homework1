@@ -60,7 +60,7 @@
                 <p class="games__numbers">Игра №3</p>
                 <h3 class="games__heading game-three">Переверни текст</h3>
                 <p class="games__description_mobile">Попробуй ввести текст, который будет перевернут.</p>
-                <button class="games__button-mobile">Играть!</button>
+                <button class="games__button-mobile" onclick="reverseText()">Играть!</button>
             </a>
             </section>
 
@@ -81,7 +81,7 @@
                 <h3 class="games__heading quiz-mobile">Простая викторина</h3>
                 <h3 class="quiz-mobile-heading">Викторина</h3>
                 <p class="games__description_mobile">Отвечай на вопросы викторины с вариантами ответов.</p>
-                <button class="games__button-mobile">Играть!</button>
+                <button class="games__button-mobile" onclick="runQuiz()">Играть!</button>
             </a>
             </section>
 
@@ -122,7 +122,7 @@
                     <div class="miniGames__text">
                     <h4 class="miniGames__name">Переверни текст</h4>
                     <p class="miniGames__description">Попробуй ввести текст, который будет перевернут.</p>
-                    <button class="miniGames__button">Играть!</button>
+                    <button class="miniGames__button" onclick="reverseText()">Играть!</button>
                 </div>
                     <img class="miniGames__image" src="images/Minigame3.png" alt="miniGame3">
                 </section>
@@ -131,7 +131,7 @@
                     <div class="miniGames__text textOne">
                     <h4 class="miniGames__name-one textOne">Викторина</h4>
                     <p class="miniGames__description-one textOne">Отвечай на вопросы викториныс вариантами ответов.</p>
-                    <button class="miniGames__button-one textOne">Играть!</button>
+                    <button class="miniGames__button-one textOne" onclick="runQuiz()">Играть!</button>
                 </div>
                     <img class="miniGames__image imageOne" src="images/Minigame4.png" alt="miniGame4">
                 </section>
@@ -164,5 +164,7 @@
 
     <script src="scriptGuessNumber.js"></script>
     <script src="scriptRandomTask.js"></script>
+    <script src="scriptFlipTheText.js"></script>  
+    <script src="scriptQuiz.js"></script>
 </body>
 </html>

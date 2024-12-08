@@ -7,19 +7,23 @@ const guessTheNumber = () => {
 
         if (userGuess === null) {
             alert("Вы вышли из игры.");
-            return;
+            break;
         }
 
         userGuess = Number(userGuess);
 
         if (isNaN(userGuess)) {
             alert('Введенное значение не является числом, попробуйте еще раз!');
+            continue;
         } else if (userGuess < randomNumber) {
             alert("Загаданное число больше.");
+            continue;
         } else if (userGuess > randomNumber){
             alert('Загаданное число меньше');
+            continue;
         } else {
             alert('Поздравляю! Вы угадали число!');
+            break;
         }
     }
 }
