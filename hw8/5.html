@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение текста по классу</title>
+</head>
+<body>
+
+    <p class="description">Первоначальный текст 1.</p>
+    <p>Абзац без класса description.</p>
+    <p class="description">Первоначальный текст 2.</p>
+    <p>Еще один абзац без класса.</p>
+    <p class="description">Первоначальный текст 3.</p>
+
+    <script>
+        const elements = document.querySelectorAll('.description');
+
+        elements.forEach(element => {
+            element.textContent = 'Новый текст';
+        });
+    </script>
+
+</body>
+</html>
