@@ -13,14 +13,13 @@
     <header class="header">
         <div class="center">
         <h1 class="header__heading">Добро пожаловать <br> на мой сайт мини-игр</h1>
-    
         <p class="header__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
-    
         <button class="header__button"><a href="#main" class="header__link">Поехали!</a></button>
     </div>
 
-    
+    <div class="header__wrapper-animation">   
     <p class="header__line">Викторина ✦ угадай число ✦ Переверни текст ✦ Простая арифметика ✦ Камень, ножницы, бумага ✦ Генератор случайных цветов ✦</p>
+    </div>
 </header>
 
     <main class="main" id="main">
@@ -91,7 +90,7 @@
                 <p class="games__numbers">Игра №6</p>
                 <h3 class="games__heading">Генератор случайных цветов</h3>
                 <p class="games__description_mobile">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                <button class="games__button-mobile">Играть!</button>
+                <button id="click_button2" class="games__button-mobile">Играть!</button>
             </a>
             </section>
         </div>
@@ -149,7 +148,7 @@
                     <div class="miniGames__text textOne">
                     <h4 class="miniGames__name-one textOne">Генератор случайных цветов</h4>
                     <p class="miniGames__description-one textOne">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <button class="miniGames__button-one textOne">Играть!</button>
+                    <button id="click_button" class="miniGames__button-one textOne">Играть!</button>
                 </div>
                     <img class="miniGames__image imageOne" src="images/Minigame6.png" alt="miniGame6">
                 </section>
@@ -167,5 +166,18 @@
     <script src="scriptFlipTheText.js"></script>  
     <script src="scriptQuiz.js"></script>
     <script src="scriptRockPaperScissors.js"></script>
+    <script>
+        const btnEls = document.querySelectorAll('#click_button, #click_button2');
+
+        btnEls.forEach(btnEl => {
+            btnEl.addEventListener('click', () => {
+                const r = Math.random() * 256;
+                const g = Math.random() * 256;
+                const b = Math.random() * 256;
+
+                document.body.style.backgroundColor = `rgba(${r}, ${g}, ${b})`;
+            });
+        });
+    </script>
 </body>
 </html>

@@ -53,6 +53,13 @@ html {
   z-index: 2;
   margin-bottom: 156px;
 }
+.header__wrapper-animation {
+  background-color: rgb(188, 236, 48);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
 .header__line {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -64,14 +71,23 @@ html {
   text-transform: uppercase;
   background-color: rgb(188, 236, 48);
   z-index: 1;
-  display: block;
-  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
   word-spacing: 25px;
   padding-left: 49px;
   padding-right: 49px;
   padding-top: 27px;
   padding-bottom: 27px;
-  width: 3220px;
+  margin-bottom: -4px;
+  animation: moveText 20s linear infinite;
+}
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .header__mobile-star-one {
   display: none;
