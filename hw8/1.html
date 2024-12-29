@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скрыть и показать текст</title>
+</head>
+<body>
+
+    <h1 id="heading">Это заголовок, который можно скрыть и показать.</h1>
+    <button id="toggleButton">Скрыть</button>
+
+    <script>
+        const heading = document.querySelector('#heading');
+        const toggleButton = document.querySelector('#toggleButton');
+        
+        toggleButton.addEventListener('click', () => {
+            if (heading.style.display === 'none') {
+                heading.style.display = 'block';
+                toggleButton.textContent = 'Скрыть';
+            } else {
+                heading.style.display = 'none';
+                toggleButton.textContent = 'Показать';
+            }
+        });
+    </script>
+
+</body>
+</html>

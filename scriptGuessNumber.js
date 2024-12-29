@@ -1,0 +1,29 @@
+const guessTheNumber = () => {
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let userGuess;
+
+    while (true) {
+        userGuess = prompt("Угадайте число от 0 до 100");
+
+        if (userGuess === null) {
+            alert("Вы вышли из игры.");
+            break;
+        }
+
+        userGuess = Number(userGuess);
+
+        if (isNaN(userGuess)) {
+            alert('Введенное значение не является числом, попробуйте еще раз!');
+            continue;
+        } else if (userGuess < randomNumber) {
+            alert("Загаданное число больше.");
+            continue;
+        } else if (userGuess > randomNumber){
+            alert('Загаданное число меньше');
+            continue;
+        } else {
+            alert('Поздравляю! Вы угадали число!');
+            break;
+        }
+    }
+}

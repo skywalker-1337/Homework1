@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить элемент в DOM</title>
+</head>
+<body>
+
+    <button id="addElementButton">Добавить элемент</button>
+
+    <script>
+        const addElementButton = document.querySelector('#addElementButton');
+
+        addElementButton.addEventListener('click', () => {
+            const newParagraph = document.createElement('p');
+
+            newParagraph.textContent = 'Новый абзац';
+
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+
+</body>
+</html>
